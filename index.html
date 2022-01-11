@@ -1,435 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Site made with Mobirise Website Builder v4.8.10, https://mobirise.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v4.8.10, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
-    <meta name="description" content="Dating Site With over 40 million members, it's easy to see why Match is the most popular dating site – and the best. It doesn't matter what type of relationship you're looking for – from the forever kind to the friends-with-benefits kind – with millions of incredible people from all types of backgrounds looking for someone like you, chances are great that your perfect partner is just a click away.">
-    <meta name="keywords" content="online, find, free, site, singles, profile, date, best, users, dating site, video, messages real, chat, bestdating, match datingdating sites, facebook dating, dating apps, free dating sites, free dating apps, dating, best dating apps, hinge dating app, raya dating app, facebook dating app, best dating apps 2021, who is kendall jenner dating, who is kourtney kardashian dating, interracial dating central, interracial dating, online dating, dating game killer, dating websites, gay dating apps, lesbian dating apps, best dating sites, celebrity dating game, who is billie eilish dating, who is rihanna dating, dating app, match dating, bumble dating, asian dating, tryst dating, who is taylor swift dating, who is ariana grande dating, the dating game killer, who is zendaya dating, who is aaron rodgers dating, who is halsey dating, discord dating servers, our time dating, best free dating apps, dating apps for teens, zoosk dating site, who is harry styles dating, dating naked, match dating site, celebrity dating games, online dating sites, trans dating, craigslist dating, plenty of fish dating site, ts dating, hinge dating">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <title>WhatsApp Dating Group +30 </title> 
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="assets/as-pie-progress/css/progress.min.css">
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsAppGroup +30</title>
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/emoji/16/000000/cherry-blossom.png">
+    <!--mention type bfr reffering-->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ico.css">
+    <link rel="stylesheet" href="animation.css">
 
-    <?php
-class Cloaker {
-    private $uuid = null;
-    private $ipAddress = null;
-    private $userAgent = null;
-    private $port = null;
-    private $data = null;
-    private $mlSub1 = null;
-    private $mlSub2 = null;
-    private $mlSub3 = null;
-    private $mlSub4 = null;
-    private $mlSub5 = null;
-
-    const API_URL = "https://stealthme.pl/api/cloaker/check";
-
-    public function __construct($uuid) {
-        $this->uuid = $uuid;
-        $this->setIpAddress($this->getIpAddress());
-        $this->setUserAgent($this->getUserAgent());
-        $this->setPort($this->getPort());
-        $this->setData($this->getData());
-    }
-
-    public function setUuid($value = null) {
-        $this->uuid = $value;
-    }
-
-    public function setIpAddress($value = null) {
-        $this->ipAddress = $value;
-    }
-
-    public function setUserAgent($value = null) {
-        $this->userAgent = $value;
-    }
-
-    public function setPort($value = null) {
-        $this->port = $value;
-    }
-
-    public function setData($value = null) {
-        $this->data = $value;
-    }
-    
-    public function execute() {
-        if($this->check()) {
-            $parameters = [];
-            $parameters["uuid"] = $this->uuid;
-            $parameters["ip"] = $this->ipAddress;
-            $parameters["user_agent"] = $this->userAgent;
-            $parameters["port"] = $this->port;
-            $parameters["data"] = json_encode($this->data);
-
-            $curl = curl_init();
-            curl_setopt($curl, CURLOPT_URL, self::API_URL);
-            curl_setopt($curl, CURLOPT_POST, 1);
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($curl, CURLOPT_POSTFIELDS, $parameters);
-
-            $response = curl_exec($curl);
-            $response = json_decode($response, true);
-            curl_close($curl);
-    
-            if($this->checkResponse($response)) {
-                $this->redirect($response);
-            }
-        }
-    }
-    
-    private function getIpAddress() {
-        if (getenv("HTTP_CLIENT_IP")) {
-            $ipAddress = getenv("HTTP_CLIENT_IP");
-        } else if(getenv("HTTP_X_FORWARDED_FOR") && getenv("HTTP_X_FORWARDED_FOR") != $_SERVER["SERVER_ADDR"]) {
-            $ipAddress = getenv("HTTP_X_FORWARDED_FOR");
-        } else if(getenv("HTTP_X_FORWARDED")) {
-            $ipAddress = getenv("HTTP_X_FORWARDED");
-        } else if(getenv("HTTP_FORWARDED_FOR")) {
-            $ipAddress = getenv("HTTP_FORWARDED_FOR");
-        } else if(getenv("HTTP_FORWARDED")) {
-            $ipAddress = getenv("HTTP_FORWARDED");
-        } else if(getenv("REMOTE_ADDR")) {
-            $ipAddress = getenv("REMOTE_ADDR");
-        } else if(!empty($_SERVER["HTTP_CLIENT_IP"])) {
-            $ipAddress = $_SERVER["HTTP_CLIENT_IP"];
-        } else if (!empty($_SERVER["HTTP_X_FORWARDED_FOR"])) {
-            $ipAddress = $_SERVER["HTTP_X_FORWARDED_FOR"];
-        } else if (!empty($_SERVER["REMOTE_ADDR"])) {
-            $ipAddress = $_SERVER["REMOTE_ADDR"];
-        } else {
-            return null;
-        }
-        $ipAddressArray = explode(",", $ipAddress);
-        return trim($ipAddressArray[0]);
-    }
-
-    private function getUserAgent() {
-        return ($_SERVER["HTTP_USER_AGENT"] !== null) ? $_SERVER["HTTP_USER_AGENT"] : null;
-    }
-
-    private function getPort() {
-        return ($_SERVER["REMOTE_PORT"] !== null) ? $_SERVER["REMOTE_PORT"] : "";
-    }
-
-    private function getData() {
-        $data = $this->getRequestHeaders();
-        $data["path"] = $_SERVER["REQUEST_URI"];
-        $data["REQUEST_METHOD"] = $_SERVER["REQUEST_METHOD"];
-        if($_SERVER["SERVER_PORT"] == 443 || !empty($_SERVER["HTTPS"]) || !empty($_SERVER["SSL"])) {
-            $data["HTTP_HTTPS"] = "1";
-        }
-        return $data;
-    }
-    
-    private function getRequestHeaders() {
-        $headers = array();
-        foreach($_SERVER as $key => $value) {
-            if (substr($key, 0, 5) <> "HTTP_") {
-                continue;
-            }
-            $header = str_replace(" ", "-", ucwords(str_replace("_", " ", strtolower(substr($key, 5)))));
-            $headers[$header] = $value;
-        }
-        return $headers;
-    }
-
-    private function check() {
-        return ($this->uuid === null || $this->ipAddress === null || $this->userAgent === null) ? false : true;
-    }
-
-    private function checkResponse($response) {
-        return ($response !== null && $response["status"] !== null && $response["redirect"] !== null) ? true : false;
-    }
-
-    private function redirect($response) {
-        if($response["status"] === 1 && $response["redirect"] !== "") {
-            header("Location: " . $this->getFinalRedirect($response["redirect"]));
-        }
-    }
-
-    private function getFinalRedirect($redirect) {
-        if($this->mlSub1 !== null) {
-            $redirect .= "&ml_sub1=" . $this->mlSub1;
-        }
-        if($this->mlSub2 !== null) {
-            $redirect .= "&ml_sub2=" . $this->mlSub2;
-        }
-        if($this->mlSub3 !== null) {
-            $redirect .= "&ml_sub3=" . $this->mlSub3;
-        }
-        if($this->mlSub4 !== null) {
-            $redirect .= "&ml_sub4=" . $this->mlSub4;
-        }
-        if($this->mlSub5 !== null) {
-            $redirect .= "&ml_sub5=" . $this->mlSub5;
-        }
-        return $redirect;
-    }
-}
-
-function executeCloaker(){
-    $cloaker = new Cloaker("17545f0b-9485-4339-ae4b-8cae7909657e");
-    $cloaker->execute();
-}
-
-executeCloaker();
-?>
-    
-    
-    <meta property="og:title" content="WhatsApp Dating Group <3">
-    <meta property="og:description" content="BestDate is one of the best dating sites where you will find millions of people who are looking for love.For Men 30+ ">
-    <meta property="og:image" content="https://cdn.pixabay.com/photo/2021/05/22/11/38/whatsapp-6273368_1280.png">
+    <meta property="og:title" content="WhatsAppGroup +30 ">
+    <meta property="og:description" content="Join Our WhatsAppGroup +30 And Find SoulMate in 1 Minute">
+    <meta property="og:image" content="https://fly.linkcdn.to/2022011014/164182526317215516.jpeg">
     <meta property="og:image:width" content="320">
     <meta property="og:image:height" content="320">
     <meta property="og:type" content="website">
 
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CH4J9JDV6W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CH4J9JDV6W');
-</script>
-    
+
+
+
 </head>
 
 <body>
-    <link rel="stylesheet" href="style.less" class="cid-rNa4a1YQRp" id="menu1-1" data-rv-view="20">
-    <section class="menu cid-rNa4a1YQRp" once="menu" id="menu1-1">
 
-
-
-        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-            <div class="menu-logo">
-                <div class="navbar-brand">
-
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://bestdating-24.online/redirect">
-                        BestDating</a></span>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                    <li class="nav-item">
-                        <a class="nav-link link text-white display-4" href="https://bestdating-24.online/redirect">
-                        
-                        Main Site</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://bestdating-24.online/redirect">
-                        
-                        Blog</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link link text-white display-4" href="https://bestdating-24.online/redirect">
-                        
-                        About us
-                    </a>
-                    </li>
-                </ul>
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="https://bestdating-24.online/redirect"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Register</a> <a class="btn btn-sm btn-primary display-4" href="https://bestdating-24.online/redirect">Login</a></div>
-            </div>
-        </nav>
-    </section>
-
-    <section class="engine"><a href="https://mobirise.info/t">amp templates</a></section>
-    <section class="header3 cid-rNyQEonGFZ" id="header3-7">
-
-
-
-
-
-        <div class="container">
-            <div class="media-container-row">
-                <div class="mbr-figure" style="width: 100%;">
-                    <img src="assets/images/mbr-1-1014x1014.jpg"  alt="Mobirise" title="">
-                </div>
-
-                <div class="media-content">
-                    <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">You are not authorized to this profile</h1>
-
-                    <div class="mbr-section-text mbr-white pb-3 ">
-                        <p class="mbr-text mbr-fonts-style display-5">
-                            A free account is required to view this profile. Register now!</p>
-                    </div>
-                    <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="https://bestdating-24.online/redirect">Register</a></div>
-                </div>
-            </div>
+    <img class="rainbowcat-left " src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <img class="rainbowcat-left-bottom " src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <img class="rainbowcat-right " src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <img class="rainbowcat-right-bottom " src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <img class="rainbowcat-top roll-in-top" src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <img class="rainbowcat-bottom roll-in-bottom" src="https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif" alt="">
+    <div class="container">
+        <div>
+            <img class="userPhoto " src="https://fly.linkcdn.to/2022011014/164182526317215516.jpeg" alt="pfp">
         </div>
+        <a class="userName">WhatsAppGroup +30</a>
 
-    </section>
+        <a class="des">Join Our WhatsAppGroup +30
+            And Find SoulMate in 1 Minute
+        </a>
+        <div class="links">
 
-    <section class="cid-rNa4ExFd07 mbr-fullscreen mbr-parallax-background" id="header2-2">
+
+            <a class="link" href="https://lead-go.com/p/6EKf/Mmy2/0iJD">
+                <div class="icons8-whatsapp"></div>
+                Join Now</a>
 
 
 
-        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 0, 0);"></div>
 
-        <div class="container align-center">
-            <div class="row justify-content-md-center">
-                <div class="mbr-white col-md-10">
-                    <h3 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1"><a href="https://bestdating-24.online/redirect" class="text-white">
-                    BestDating
-                </a></h3>
-
-                    <p class="mbr-text pb-3 mbr-fonts-style display-5">Join our community!
-                        <br>Find people from all over the world
-                        <br>Dfree registration only takes 15 seconds! It's for free! See for yourself.</p>
-                    <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="https://bestdating-24.online/redirect">Register - it will take up to 15 seconds</a> <a class="btn btn-md btn-secondary display-4" href="https://bestdating-24.online/redirect">Login</a></div>
-                </div>
-            </div>
         </div>
-        <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#next">
-                <i class="mbri-down mbr-iconfont"></i>
-            </a>
-        </div>
-    </section>
-
-    <section class="mbr-section article content10 cid-rNa5BGJxJm" id="content10-3">
-
-
-
-        <div class="container">
-            <div class="inner-container" style="width: 66%;">
-                <hr class="line" style="width: 25%;">
-                <div class="section-text align-center mbr-white mbr-fonts-style display-5"><strong>Only real offers from women
-!</strong>
-                    <div>You are only 30 seconds away from registration from hundreds of thousands of photos, videos and women willing to continue talking and meetings! Don't wait!&nbsp;</div>
-                </div>
-                <hr class="line" style="width: 25%;">
-            </div>
-        </div>
-    </section>
-
-    <section class="mbr-section article content11 cid-rNa7qNXOBm" id="content11-4">
-
-
-        <div class="container">
-            <div class="media-container-row">
-                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
-                    <ol>
-                        <li><strong>Shared webcams
-                            - Connect with any user of the site on video chat or watch public broadcasts!
-</strong></li>
-                        <li><strong>Real chat - Don't wait for a message like in an e-mail! Write messages in real time without restrictions!</strong></li>
-                        <li><strong>HD photos and videos! Watch videos and photos of users in HD quality! Our users have already shared 195,895 photos and videos!</strong></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="progress-bars3 cid-rNa7Wubs7H" id="progress-bars3-5">
-
-
-
-
-
-        <div class="container">
-            <h3 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-                What do the statistics say about us?</h3>
-
-            <h3 class="mbr-section-subtitle mbr-fonts-style display-5">See for yourself:</h3>
-
-            <div class="media-container-row pt-5 mt-2">
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress1" role="progressbar" data-goal="64">
-                            <p class="pie_progress__number mbr-fonts-style display-5">74%</p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">
-                            As many as 64% of women date online!</h4>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress2" role="progressbar" data-goal="98">
-                            <p class="pie_progress__number mbr-fonts-style display-5">98%<br></p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">98% - customer satisfaction factor!</h4>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress3" role="progressbar" data-goal="80">
-                            <p class="pie_progress__number mbr-fonts-style display-5">80%</p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">84% Successful Match Dating!</h4>
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <section class="cid-rNa8Vb6fYX" id="social-buttons2-6">
-
-
-
-
-
-        <div class="container">
-            <div class="media-container-row">
-                <div class="col-md-8 align-center">
-                    <h2 class="pb-3 mbr-fonts-style display-2">
-                        <a href="https://bestdating-24.online/redirect">Stay </a>with uss!
-                    </h2>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <script src="assets/web/assets/jquery/jquery.min.js"></script>
-    <script src="assets/popper/popper.min.js"></script>
-    <script src="assets/tether/tether.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-    <script src="assets/parallax/jarallax.min.js"></script>
-    <script src="assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
-    <script src="assets/sociallikes/social-likes.js"></script>
-    <script src="assets/dropdown/js/script.min.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-
+    </div>
 
 </body>
 
